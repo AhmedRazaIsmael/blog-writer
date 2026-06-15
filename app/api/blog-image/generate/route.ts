@@ -1,5 +1,6 @@
 import { openai } from "@/lib/openai";
 import { NextResponse } from "next/server";
+import { prisma } from "@/lib/prisma";
 
 export async function POST(
   req: Request
@@ -62,6 +63,13 @@ Return only the image prompt.
     const featuredImage =
       `data:image/png;base64,${imageBase64}`;
 
+      await prisma.blogImage.create({
+        data: {
+            title: body.title,
+            content: body.content,
+            image: featuredImage,
+        },
+        });
     return NextResponse.json({
       featuredImage,
     });
