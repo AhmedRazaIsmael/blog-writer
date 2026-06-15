@@ -1,0 +1,135 @@
+const prompt = `
+Write a professional and realistic Upwork cover letter.
+
+The proposal should sound human, confident, personalized, and naturally written by an experienced freelancer after carefully reading the client's project.
+
+MAIN GOAL:
+The first 2 lines should immediately attract attention because Upwork clients initially only see the preview.
+
+FIRST 2 LINES RULES:
+- start naturally and professionally
+- mention the client's project clearly
+- avoid sounding robotic or overly analytical
+- avoid generic AI introductions
+- avoid overexplaining in the opening
+- The opening should feel like a real Upwork freelancer proposal, not a project analysis.
+
+DO NOT start with:
+- "I can help you"
+- "I am interested"
+- "Hope you're doing well"
+- "Imagine"
+- "Greetings"
+- "I'd love to work with you"
+
+PROPOSAL STRUCTURE:
+
+1. Start with "Hi" and the client's name if available
+2. Open naturally like a real Upwork freelancer proposal
+3. Briefly mention the project and how you can help
+4. Short personal introduction
+5. Brief explanation of how you would approach the project
+6. Briefly explain your approach in a simple way
+7. Mention one relevant past project naturally as proof of related experience
+8. End with a short, natural question related to the project that encourages the client to reply
+9. Add a short portfolio section near the end using the provided portfolio links
+
+IMPORTANT QUESTION RULES:
+- The final question should prove you understood the project
+- The question should feel natural and relevant
+- The question should encourage conversation
+- Avoid generic questions like:
+  - "Let me know your thoughts"
+  - "Can we discuss further?"
+  - "When can we start?"
+- The question should be about:
+  - workflow
+  - functionality
+  - design direction
+  - business goals
+  - existing assets
+  - technical preference
+  - user experience
+- Ask only ONE short question
+- Do NOT over-analyze the project
+- Do NOT explain every implementation detail
+- Do NOT sound like a consultant
+- Keep implementation details short and natural
+- Avoid long bullet lists
+- Mention only 2–3 practical points maximum
+- The proposal should feel lightweight and easy to read
+- Avoid sounding like a project plan
+If a relevant portfolio exists, reference it naturally inside the proposal instead of only dropping a raw URL.
+When mentioning portfolio, briefly explain why it is relevant to the client's project.
+
+WRITING STYLE:
+- professional
+- human
+- direct
+- practical
+- slightly conversational
+- concise
+- realistic
+
+IMPORTANT:
+- Keep proposal between 150–300 words
+- Keep paragraphs short
+- Use simple natural English
+- Do NOT sound corporate
+- Do NOT overexplain
+- Do NOT use fake excitement
+- Do NOT sound overly polished
+- Avoid unnecessary adjectives
+- The proposal should feel like a normal freelancer reply, not a project consultation.
+- Avoid sounding like ChatGPT or any AI
+- Slight imperfections are okay
+- The proposal should feel manually typed, not generated
+- If industry website references are available, use them to better understand the client's industry and expected website structure naturally.
+- If portfolio links are provided, create a clean "Here's my portfolio:" section and list the URLs naturally like a real freelancer proposal.
+- Do not explain every portfolio project individually unless highly relevant.
+The proposal should open similarly to:
+"Hi [Client Name], I can help you..."
+OR
+"Hi [Client Name], I’d be glad to help with..."
+Avoid opening with project analysis or commentary.
+
+NEVER USE THESE WORDS:
+- seamless
+- leverage
+- robust
+- sleek
+- innovative
+- dynamic
+- cutting-edge
+- transformative
+- revolutionize
+- thrilled
+- excited
+
+ENDING STYLE:
+- Add one short natural closing sentence before the final sign-off
+- Examples:
+  - "I’d be glad to discuss your project further — when’s a good time to connect?"
+  - "Let me know your thoughts, and I’ll be glad to share ideas tailored to your project."
+  - "Happy to discuss the details further and get started whenever you're ready."
+
+- Then finish with either:
+  - "Best regards,"
+  OR
+  - "Let’s connect,"
+followed by the freelancer first name
+
+PROFILE:
+Name: ${profile?.name}
+Title: ${profile?.title}
+Bio: ${profile?.bio}
+Skills: ${profile?.skills}
+
+PORTFOLIO LINKS:
+${portfolioLinks}
+
+JOB POST:
+${jobPost}
+
+Write the proposal now.
+`;
