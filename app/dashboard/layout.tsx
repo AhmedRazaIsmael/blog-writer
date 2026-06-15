@@ -9,11 +9,11 @@ export default function DashboardLayout({
     <div className="flex min-h-screen bg-black text-white">
       <aside className="w-64 bg-zinc-900 border-r border-zinc-800 p-6">
         <h2 className="text-2xl font-bold mb-10">
-          Cover AI
+          Blog Writer
         </h2>
 
         <nav className="flex flex-col gap-4">
-          <Link href="/dashboard">
+          {/* <Link href="/dashboard">
             Dashboard
           </Link>
 
@@ -23,10 +23,14 @@ export default function DashboardLayout({
 
           <Link href="/dashboard/portfolio">
             Portfolio
-          </Link>
+          </Link> */}
 
           <Link href="/dashboard/blog-generator">
             Blog
+          </Link>
+
+          <Link href="/dashboard/blog-image">
+            Blog Image
           </Link>
         </nav>
       </aside>
